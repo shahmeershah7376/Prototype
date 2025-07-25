@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CapCut Ultra</title>
+  <link rel="stylesheet" href="css/glass-ui.css">
+</head>
+<body>
+  <!-- Video Preview -->
+  <div class="video-preview">
+    <video id="editor" controls></video>
+  </div>
+
+  <!-- Filter Categories -->
+  <div class="category-tabs">
+    <button data-cat="portrait">👩 Portrait</button>
+    <button data-cat="cinematic">🎬 Cinematic</button>
+    <button data-cat="fusion">⚗️ Fusion Lab</button>
+  </div>
+
+  <!-- Filter Grid -->
+  <div class="filter-grid" id="filterGrid">
+    <!-- Dynamically loaded -->
+  </div>
+
+  <!-- Fusion Mode -->
+  <div class="fusion-controls">
+    <div class="fusion-preview">
+      <span id="currentMix">No filters selected</span>
+      <button id="applyFusion">Mix Filters</button>
+    </div>
+  </div>
+
+  <script src="js/filter-bank.js"></script>
+  <script src="js/fusion-core.js"></script>
+  <script src="js/editor.js"></script>
+</body>
+</html>
